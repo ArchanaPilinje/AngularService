@@ -1,0 +1,10 @@
+<div class="m-2">
+<ul class="list-group list-group-flush" *ngIf="crud.selectedUser">
+    <li class="list-group-item">Id:{{crud.selectedUser.id}}</li>
+    <li class="list-group-item">Name:{{crud.selectedUser.name}}</li>
+    <li class="list-group-item">User Name:{{crud.selectedUser.username}}</li>
+    <li class="list-group-item">Email:{{crud.selectedUser.email}}</li>
+    <li class="list-group-item">Address:{{crud.selectedUser.address.street+","+crud.selectedUser.address.street}}</li>
+    <li class="list-group-item">Company:{{crud.selectedUser.company.name}}</li>
+</ul>
+</div>

@@ -1,0 +1,10 @@
+<div class='card-columns'>
+    <div class='card my-2' *ngFor="let album of crud.albums">
+        <img src='../assets/placeholder.jpg'  width="100px" height="100px"alt='' class='card-img-top'>
+        <div class='card-body'>
+            <h5 class='card-title text-warning'>
+                    {{album.title}}
+                </h5>
+        </div>
+    </div>
+</div>

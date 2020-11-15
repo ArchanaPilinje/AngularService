@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a routerLink = "" class ="list-group-item list-group-item -action d-flex justify-contents-between align-items-center"
+     (click) = "selectUser(i)"
+    *ngFor = "let user of crud.users; let i=index">
+{{user.name}}
+<i class="material-icons" *ngIf="crud.selectedUser && user.id==crud.selectedUser.id">
+check_circle
+</i>
+</a>
+<!-- <p>hello </p> -->
+</div>
